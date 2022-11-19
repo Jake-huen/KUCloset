@@ -10,7 +10,8 @@ import {
   ScrollView,
 } from "react-native";
 import { UserIcon, ChevronDownIcon } from "react-native-heroicons/outline";
-import Categories from "../components/categories";
+import Categories from "../components/Categories";
+import FeaturedRow from "../components/FeatruedRow";
 
 const HomeScreen = () => {
   const navigation = useNavigation();
@@ -35,7 +36,7 @@ const HomeScreen = () => {
             오늘의 코디를 시작하세요!!
           </Text>
           <Text className="font-bold text-xl">
-            오늘의 날씨
+            KULOSET
             <ChevronDownIcon size={20} color="#00CCBB" />
           </Text>
         </View>
@@ -60,7 +61,31 @@ const HomeScreen = () => {
           paddingBottom: 100,
         }}
       >
-        <Categories></Categories>
+        <Categories />
+
+        <FeaturedRow
+          id="12345"
+          title="오늘의 날씨"
+          description="오늘의 날씨 정보입니다!"
+        />
+
+        <FeaturedRow
+          id="123"
+          title="어제입은 옷"
+          description="어제는 이런 옷들을 입었습니다!"
+        />
+
+        <FeaturedRow
+          id="1234"
+          title="옷 선택 화면으로 이동"
+          description="내 옷장에 있는 옷들을 선택해봐요!"
+        />
+
+        <FeaturedRow
+          id="1234"
+          title="옷을 추천해드릴까요??"
+          description="날씨에 맞춰, 어제 입은 옷과 겹치지 않게!"
+        />
       </ScrollView>
     </SafeAreaView>
   );
