@@ -1,21 +1,30 @@
 import { StatusBar } from "expo-status-bar";
 import React from "react";
+import { StyleSheet, Text, View } from "react-native";
+import { TailwindProvider } from "tailwindcss-react-native";
 import { NavigationContainer } from "@react-navigation/native";
-import { createStackNavigator } from "@react-navigation/stack";
-import LandingScreen from "./components/auth/Landing";
+import { createNativeStackNavigator } from "@react-navigation/native-stack";
+import HomeScreen from "./screens/HomeScreen";
 
-const Stack = createStackNavigator();
+const Stack = createNativeStackNavigator();
 
 export default function App() {
   return (
     <NavigationContainer>
-      <Stack.Navigator initialRouteName="Landing">
-        <Stack.Screen
-          name="Landing"
-          component={LandingScreen}
-          options={{ headerShown: false }}
-        />
-      </Stack.Navigator>
+      <TailwindProvider>
+        <Stack.Navigator>
+          <Stack.Screen name="Home" component={HomeScreen} />
+        </Stack.Navigator>
+      </TailwindProvider>
     </NavigationContainer>
   );
 }
+
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    backgroundColor: "#fff",
+    alignItems: "center",
+    justifyContent: "center",
+  },
+});
