@@ -10,16 +10,16 @@ const Categories = () => {
       contentContainerStyle={{ paddingHorizontal: 15, paddingTop: 10 }}
     >
       <CategoryCard
-        imgUrl="http://image.mujikorea.net/goods/31/06/03/56/M5AG302_COL_962_400.jpg"
-        title="셔츠"
+        imgUrl="https://t1.daumcdn.net/cfile/tistory/9997044D5BF15FF807"
+        title="미니멀 룩"
       />
       <CategoryCard
-        imgUrl="https://www.leekorea.co.kr/web/product/medium/202210/b44fb09c52b4604a04660b97b634f963.jpg"
-        title="니트"
+        imgUrl="https://image.msscdn.net/images/goods_img/20210722/2037637/2037637_4_500.jpg?t=20220311101804"
+        title="이지 캐주얼 룩"
       />
       <CategoryCard
-        imgUrl="https://cdn.pixabay.com/photo/2016/03/31/19/21/clothes-1294933__340.png"
-        title="스웨터"
+        imgUrl="https://mblogthumb-phinf.pstatic.net/MjAxOTEwMDdfMjI1/MDAxNTcwNDMyNDYwMDY5.KZRDMPbvNuKYN0Qkw57HT7rWT6J0fkG1d_DoiKokY2sg.WuW64A98i8sLB4jK1U0lFxahLrvUXsYYJI85hgeWT2kg.JPEG.gimdh0930/100.jpg?type=w800"
+        title="아메카지"
       />
       <CategoryCard
         imgUrl="https://image.msscdn.net/images/goods_img/20210924/2144044/2144044_1_500.jpg?t=20210924100143"
@@ -30,7 +30,7 @@ const Categories = () => {
         title="청바지"
       />
       <CategoryCard
-        imgUrl="https://image.msscdn.net/images/goods_img/20191002/1175159/1175159_1_500.jpg"
+        imgUrl="https://image.msscdn.net/images/goods_img/20181123/912314/912314_6_500.jpg?t=20201102163153"
         title="패딩"
       />
       <CategoryCard
