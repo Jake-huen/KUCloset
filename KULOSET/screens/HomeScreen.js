@@ -18,6 +18,7 @@ import {
 import Categories from "../components/Categories";
 import FeaturedRow from "../components/FeatruedRow";
 import Weather from "../components/Weather";
+import AddRow from "../components/AddRow";
 
 const HomeScreen = () => {
   const navigation = useNavigation();
@@ -74,7 +75,7 @@ const HomeScreen = () => {
           description="오늘은 다른 옷을 입어보는 것도 좋을 것 같아요!"
         />
 
-        <FeaturedRow
+        <AddRow
           id="1234"
           title="옷 선택 화면으로 이동"
           description="내 옷장에 있는 옷들을 선택해봐요!"

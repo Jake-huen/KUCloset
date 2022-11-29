@@ -1,6 +1,10 @@
 import { View, Text, Image, TouchableOpacity } from "react-native";
 import React from "react";
-import { KeyIcon, StarIcon } from "react-native-heroicons/outline";
+import {
+  BookmarkIcon,
+  KeyIcon,
+  StarIcon,
+} from "react-native-heroicons/outline";
 
 const ClothCard = ({
   id,
@@ -31,8 +35,8 @@ const ClothCard = ({
       </View>
 
       <View className="flex-row items-center space-x-1">
-        <KeyIcon color="gray" opacity={0.4} size={22} />
-        <Text className="text-xs text-gray-500">Nearby</Text>
+        <BookmarkIcon color="gray" opacity={0.4} size={22} />
+        <Text className="text-xs text-gray-500">저장하기</Text>
       </View>
     </TouchableOpacity>
   );
